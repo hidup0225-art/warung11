@@ -52,7 +52,7 @@
             <div class="tata-katalog">
             <aside class="sisi" aria-label="Kategori menu"> 
                     <h2 class="sisi-judul"> 
-                        <img src="WarungMakWiwik/aset UKK warung makan mak wiwik/Logo tanpa background.png" alt="" width="16" height="16"> 
+                       
                         Kategori menu 
                     </h2> 
                     <div class="Kategori"> 
@@ -224,8 +224,8 @@
                             </div> 
                         </article>
 
-                          <p class="kosong" id="katalog-kosong">Menu tidak ditemukan. Coba kata lain atau pilih kategori lain. 
-                    </p> 
+                          <p class="kosong" id="katalog-kosong" hidden>Menu tidak ditemukan. Coba kata lain atau pilih kategori lain.
+                    </p>  
                 </div> 
             </div> 
         </section>
@@ -269,14 +269,21 @@
                         <input type="text" id="isian-username" autocomplete="username" required> 
                         <p class="pesan-galat">Username wajib diisi.</p> 
                     </div> 
- 
-                    <div class="kolom-isian">
-
-                        <label for="isian-password">Password</label> 
-                        <input type="password" id="isian-password" autocomplete="current-password" required> 
-                        <p class="pesan-galat">Password wajib diisi.</p> 
-                        <p class="pesan-galat" id="login-salah" hidden>Username atau password salah.</p> 
-                    </div>
+                      
+                      
+                      <div class="kolom-isian kolom-password">
+                          <label for="isian-password">Password</label>
+                          <input type="password" id="isian-password" autocomplete="current-password" required>
+                          <button type="button" class="tombol-password" id="tombol-password" aria-label="Tampilkan password" aria-controls="isian-password" aria-pressed="false" title="Tampilkan password">
+                              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                  <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 752 12 2 12Z"></path>
+                                  <circle cx="12" cy="12" r="3"></circle>
+                                  <path class="garis-coret-mata" d="M3 3 21 21"></path>
+                              </svg>
+                          </button>
+                          <p class="pesan-galat">Password wajib diisi.</p>
+                          <p class="pesan-galat" id="login-salah" hidden>Username atau password salah.</p>
+                     </div>
 
                     <button type="submit" class="tombol tombol-utama tombol-lebar tombol-kirim">Masuk</button>
 
@@ -287,7 +294,7 @@
 
         <section id="halaman-detail"> 
             <a class="tautan-kembali" href="#/">Kembali ke katalog</a>
-  <p class="kosong" id="detail-tidak-ada" hidden>Menu tidak ditemukan.</p>
+            <p class="kosong" id="detail-tidak-ada" hidden>Menu tidak ditemukan.</p>
 
   <article class="detail" id="isi-detail">
     <div class="detail-gambar">
